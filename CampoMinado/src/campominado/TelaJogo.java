@@ -5,7 +5,7 @@
  */
 package campominado;
 
-import java.awt.Button;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import javax.swing.JButton;
@@ -880,7 +880,7 @@ public class TelaJogo extends javax.swing.JFrame {
 
     private void btn_3DActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_3DActionPerformed
         btn_3D.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Pontinho.png")));
-
+//nfbhdsbsdfh
         int num1 = Integer.parseInt(Tentativas.getText());
         int soma = num1 + 1;
         Tentativas.setText(Integer.toString(soma));
