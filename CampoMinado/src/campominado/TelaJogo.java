@@ -8,6 +8,7 @@ package campominado;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Random;
 import javax.swing.JButton;
 import javax.swing.Timer;
 import niveis.Nivel;
@@ -31,6 +32,7 @@ public class TelaJogo extends javax.swing.JFrame {
     public TelaJogo() {
         initComponents();
         preencherArryButos();
+        setBotoesEmbaralhados();
 
     }
 
@@ -1006,9 +1008,43 @@ public class TelaJogo extends javax.swing.JFrame {
 
     }
 
-    private void embaranharBotoes() {
-        for (int i = 0; i <= botaosNivel1.size(); i++) {
-            botaosNivel1.get(i).getLocation();
+    private void setBotoesEmbaralhados() {
+        int tam = botaosNivel1.size() -1;
+        Random rd = new Random();
+        float posX, posY, posZ, posW;
+        int posAleatoria;
+
+       
+
+        for (int i = 0; i < botaosNivel1.size()-1; i++) {
+            posAleatoria = rd.nextInt(tam);
+            // pega posisão do primeiro botao
+            posX = botaosNivel1.get(posAleatoria).getAlignmentX();
+            posY = botaosNivel1.get(posAleatoria).getAlignmentY();
+           
+            // pega posisão do segundo botao
+            posZ = botaosNivel1.get(i).getAlignmentX();
+            posW = botaosNivel1.get(i).getAlignmentY();
+            
+            //Troca posicao do botao primero com o segundo
+            botaosNivel1.get(posAleatoria).setAlignmentX(posZ);
+            botaosNivel1.get(posAleatoria).setAlignmentX(posW);
+            
+            //Troca posicao do botao segundo com o primeiro
+             botaosNivel1.get(i).setAlignmentX(posX);
+            botaosNivel1.get(i).setAlignmentX(posY);
+                    
         }
+    }
+
+    private void embaralhaBotoes() {
+       int tam = botaosNivel1.size() -1;
+       Random rd = new Random();
+       rd.nextInt(tam);
+       ArrayList<Integer> numeros = new ArrayList<>();
+       for (int i=0; i < tam; i++){        
+           numeros.add(i+1);  
+       }
+
     }
 }

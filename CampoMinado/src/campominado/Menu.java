@@ -15,8 +15,6 @@ import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javazoom.jl.decoder.JavaLayerException;
-import javazoom.jl.player.Player;
 
 
 
@@ -81,7 +79,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btn_Sair);
-        btn_Sair.setBounds(210, 270, 80, 31);
+        btn_Sair.setBounds(210, 270, 80, 33);
 
         btn_Regras.setFont(new java.awt.Font("Cooper Black", 1, 18)); // NOI18N
         btn_Regras.setText("Regras ");
@@ -92,7 +90,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btn_Regras);
-        btn_Regras.setBounds(200, 230, 110, 31);
+        btn_Regras.setBounds(200, 230, 110, 33);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/FundoInicio.png"))); // NOI18N
         jLabel1.setMaximumSize(new java.awt.Dimension(500, 405));
