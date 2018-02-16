@@ -99,8 +99,8 @@ public class TelaJogo extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         Tentativas = new javax.swing.JTextField();
         Pontos = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Campo minado");
@@ -530,15 +530,20 @@ public class TelaJogo extends javax.swing.JFrame {
         getContentPane().add(Pontos);
         Pontos.setBounds(140, 190, 30, 30);
 
+        jButton2.setText("Novo Jogo");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton2);
+        jButton2.setBounds(540, 470, 90, 23);
+
         jLabel2.setBackground(new java.awt.Color(153, 153, 153));
         jLabel2.setForeground(new java.awt.Color(255, 0, 0));
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/FotoDoFundo.png"))); // NOI18N
         getContentPane().add(jLabel2);
         jLabel2.setBounds(0, 0, 840, 530);
-
-        jButton2.setText("jButton2");
-        getContentPane().add(jButton2);
-        jButton2.setBounds(550, 470, 73, 23);
 
         pack();
         setLocationRelativeTo(null);
@@ -928,6 +933,10 @@ public class TelaJogo extends javax.swing.JFrame {
     private void TentativasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TentativasActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TentativasActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
