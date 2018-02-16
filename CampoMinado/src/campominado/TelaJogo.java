@@ -100,6 +100,7 @@ public class TelaJogo extends javax.swing.JFrame {
         Tentativas = new javax.swing.JTextField();
         Pontos = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Campo minado");
@@ -193,6 +194,7 @@ public class TelaJogo extends javax.swing.JFrame {
         jPanel5.setBackground(new java.awt.Color(153, 153, 153));
 
         btn_2A.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Minions.png"))); // NOI18N
+        btn_2A.setEnabled(false);
         btn_2A.setPreferredSize(new java.awt.Dimension(73, 70));
         btn_2A.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -207,6 +209,7 @@ public class TelaJogo extends javax.swing.JFrame {
         jPanel6.setBackground(new java.awt.Color(153, 153, 153));
 
         btn_2B.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Minions.png"))); // NOI18N
+        btn_2B.setEnabled(false);
         btn_2B.setPreferredSize(new java.awt.Dimension(73, 70));
         btn_2B.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -221,6 +224,7 @@ public class TelaJogo extends javax.swing.JFrame {
         jPanel8.setBackground(new java.awt.Color(153, 153, 153));
 
         btn_2C.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Minions.png"))); // NOI18N
+        btn_2C.setEnabled(false);
         btn_2C.setPreferredSize(new java.awt.Dimension(73, 70));
         btn_2C.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -235,6 +239,7 @@ public class TelaJogo extends javax.swing.JFrame {
         jPanel11.setBackground(new java.awt.Color(153, 153, 153));
 
         btn_2D.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Minions.png"))); // NOI18N
+        btn_2D.setEnabled(false);
         btn_2D.setPreferredSize(new java.awt.Dimension(73, 70));
         btn_2D.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -249,6 +254,7 @@ public class TelaJogo extends javax.swing.JFrame {
         jPanel12.setBackground(new java.awt.Color(153, 153, 153));
 
         btn_3A.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Minions2.png"))); // NOI18N
+        btn_3A.setEnabled(false);
         btn_3A.setPreferredSize(new java.awt.Dimension(79, 70));
         btn_3A.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -263,6 +269,7 @@ public class TelaJogo extends javax.swing.JFrame {
         jPanel14.setBackground(new java.awt.Color(153, 153, 153));
 
         btn_3B.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Minions2.png"))); // NOI18N
+        btn_3B.setEnabled(false);
         btn_3B.setPreferredSize(new java.awt.Dimension(79, 70));
         btn_3B.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -277,6 +284,7 @@ public class TelaJogo extends javax.swing.JFrame {
         jPanel15.setBackground(new java.awt.Color(153, 153, 153));
 
         btn_3C.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Minions2.png"))); // NOI18N
+        btn_3C.setEnabled(false);
         btn_3C.setPreferredSize(new java.awt.Dimension(79, 70));
         btn_3C.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -291,6 +299,7 @@ public class TelaJogo extends javax.swing.JFrame {
         jPanel16.setBackground(new java.awt.Color(153, 153, 153));
 
         btn_3D.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Minions2.png"))); // NOI18N
+        btn_3D.setEnabled(false);
         btn_3D.setPreferredSize(new java.awt.Dimension(79, 70));
         btn_3D.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -305,6 +314,7 @@ public class TelaJogo extends javax.swing.JFrame {
         jPanel17.setBackground(new java.awt.Color(153, 153, 153));
 
         btn_4A.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/minions3.png"))); // NOI18N
+        btn_4A.setEnabled(false);
         btn_4A.setMaximumSize(new java.awt.Dimension(73, 73));
         btn_4A.setMinimumSize(new java.awt.Dimension(73, 73));
         btn_4A.setPreferredSize(new java.awt.Dimension(73, 60));
@@ -321,6 +331,7 @@ public class TelaJogo extends javax.swing.JFrame {
         jPanel18.setBackground(new java.awt.Color(153, 153, 153));
 
         btn_4B.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/minions3.png"))); // NOI18N
+        btn_4B.setEnabled(false);
         btn_4B.setMaximumSize(new java.awt.Dimension(73, 73));
         btn_4B.setMinimumSize(new java.awt.Dimension(73, 73));
         btn_4B.setPreferredSize(new java.awt.Dimension(73, 60));
@@ -337,6 +348,7 @@ public class TelaJogo extends javax.swing.JFrame {
         jPanel19.setBackground(new java.awt.Color(153, 153, 153));
 
         btn_4C.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/minions3.png"))); // NOI18N
+        btn_4C.setEnabled(false);
         btn_4C.setMaximumSize(new java.awt.Dimension(73, 73));
         btn_4C.setMinimumSize(new java.awt.Dimension(73, 73));
         btn_4C.setPreferredSize(new java.awt.Dimension(73, 60));
@@ -353,6 +365,7 @@ public class TelaJogo extends javax.swing.JFrame {
         jPanel20.setBackground(new java.awt.Color(153, 153, 153));
 
         btn_4D.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/minions3.png"))); // NOI18N
+        btn_4D.setEnabled(false);
         btn_4D.setMaximumSize(new java.awt.Dimension(73, 73));
         btn_4D.setMinimumSize(new java.awt.Dimension(73, 73));
         btn_4D.setPreferredSize(new java.awt.Dimension(73, 60));
@@ -379,6 +392,7 @@ public class TelaJogo extends javax.swing.JFrame {
         jPanel21.setBackground(new java.awt.Color(153, 153, 153));
 
         btn_4E.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/minions3.png"))); // NOI18N
+        btn_4E.setEnabled(false);
         btn_4E.setMaximumSize(new java.awt.Dimension(73, 73));
         btn_4E.setMinimumSize(new java.awt.Dimension(73, 73));
         btn_4E.setPreferredSize(new java.awt.Dimension(73, 60));
@@ -395,6 +409,7 @@ public class TelaJogo extends javax.swing.JFrame {
         jPanel22.setBackground(new java.awt.Color(153, 153, 153));
 
         btn_3E.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Minions2.png"))); // NOI18N
+        btn_3E.setEnabled(false);
         btn_3E.setPreferredSize(new java.awt.Dimension(79, 70));
         btn_3E.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -409,6 +424,7 @@ public class TelaJogo extends javax.swing.JFrame {
         jPanel23.setBackground(new java.awt.Color(153, 153, 153));
 
         btn_2E.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Minions.png"))); // NOI18N
+        btn_2E.setEnabled(false);
         btn_2E.setPreferredSize(new java.awt.Dimension(73, 70));
         btn_2E.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -520,6 +536,10 @@ public class TelaJogo extends javax.swing.JFrame {
         getContentPane().add(jLabel2);
         jLabel2.setBounds(0, 0, 840, 530);
 
+        jButton2.setText("jButton2");
+        getContentPane().add(jButton2);
+        jButton2.setBounds(550, 470, 73, 23);
+
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
@@ -544,9 +564,7 @@ public class TelaJogo extends javax.swing.JFrame {
             // pega a guantidade de pontos que jogador tem 
             TelaJogo ponto = new TelaJogo();
             ponto.setName(Pontos.getText());
-            GameOver frms = new GameOver();
-            frms.ExportarPontos(ponto);
-            frms.setVisible(true);
+          
             dispose();
 
         } else {
@@ -566,9 +584,7 @@ public class TelaJogo extends javax.swing.JFrame {
             // pega a guantidade de pontos que jogador tem 
             TelaJogo ponto = new TelaJogo();
             ponto.setName(Pontos.getText());
-            GameOver frms = new GameOver();
-            frms.ExportarPontos(ponto);
-            frms.setVisible(true);
+            
             dispose();
 
         } else {
@@ -583,6 +599,13 @@ public class TelaJogo extends javax.swing.JFrame {
         btn_1B.setEnabled(false);
         btn_1D.setEnabled(false);
         btn_1E.setEnabled(false);
+        
+        
+        btn_2A.setEnabled(true);
+        btn_2B.setEnabled(true);
+        btn_2C.setEnabled(true);
+        btn_2D.setEnabled(true);
+        btn_2E.setEnabled(true);
 
         int num1 = Integer.parseInt(Pontos.getText());
         int soma = num1 + 10;
@@ -602,9 +625,7 @@ public class TelaJogo extends javax.swing.JFrame {
             // pega a guantidade de pontos que jogador tem 
             TelaJogo ponto = new TelaJogo();
             ponto.setName(Pontos.getText());
-            GameOver frms = new GameOver();
-            frms.ExportarPontos(ponto);
-            frms.setVisible(true);
+            
             dispose();
 
         } else {
@@ -635,10 +656,9 @@ public class TelaJogo extends javax.swing.JFrame {
             // pega a guantidade de pontos que jogador tem 
             TelaJogo ponto = new TelaJogo();
             ponto.setName(Pontos.getText());
-            GameOver frms = new GameOver();
-            frms.ExportarPontos(ponto);
-            frms.setVisible(true);
-            dispose();
+           
+           
+          //  dispose();
 
         } else {
             btn_1A.setEnabled(false);
@@ -672,9 +692,7 @@ public class TelaJogo extends javax.swing.JFrame {
             // pega a guantidade de pontos que jogador tem 
             TelaJogo ponto = new TelaJogo();
             ponto.setName(Pontos.getText());
-            GameOver frms = new GameOver();
-            frms.ExportarPontos(ponto);
-            frms.setVisible(true);
+            
             dispose();
 
         } else {
@@ -695,9 +713,7 @@ public class TelaJogo extends javax.swing.JFrame {
             // pega a guantidade de pontos que jogador tem 
             TelaJogo ponto = new TelaJogo();
             ponto.setName(Pontos.getText());
-            GameOver frms = new GameOver();
-            frms.ExportarPontos(ponto);
-            frms.setVisible(true);
+            
             dispose();
 
         } else {
@@ -719,9 +735,7 @@ public class TelaJogo extends javax.swing.JFrame {
             // pega a guantidade de pontos que jogador tem 
             TelaJogo ponto = new TelaJogo();
             ponto.setName(Pontos.getText());
-            GameOver frms = new GameOver();
-            frms.ExportarPontos(ponto);
-            frms.setVisible(true);
+            
             dispose();
 
         } else {
@@ -743,9 +757,7 @@ public class TelaJogo extends javax.swing.JFrame {
             // pega a guantidade de pontos que jogador tem 
             TelaJogo ponto = new TelaJogo();
             ponto.setName(Pontos.getText());
-            GameOver frms = new GameOver();
-            frms.ExportarPontos(ponto);
-            frms.setVisible(true);
+            
             dispose();
 
         } else {
@@ -765,9 +777,7 @@ public class TelaJogo extends javax.swing.JFrame {
             // pega a guantidade de pontos que jogador tem 
             TelaJogo ponto = new TelaJogo();
             ponto.setName(Pontos.getText());
-            GameOver frms = new GameOver();
-            frms.ExportarPontos(ponto);
-            frms.setVisible(true);
+            
             dispose();
 
         } else {
@@ -787,9 +797,7 @@ public class TelaJogo extends javax.swing.JFrame {
             // pega a guantidade de pontos que jogador tem 
             TelaJogo ponto = new TelaJogo();
             ponto.setName(Pontos.getText());
-            GameOver frms = new GameOver();
-            frms.ExportarPontos(ponto);
-            frms.setVisible(true);
+            
             dispose();
 
         } else {
@@ -804,6 +812,13 @@ public class TelaJogo extends javax.swing.JFrame {
         btn_2B.setEnabled(false);
         btn_2C.setEnabled(false);
         btn_2D.setEnabled(false);
+       
+        //abilita os campos ára o priximo nivel
+        btn_3A.setEnabled(true);
+        btn_3B.setEnabled(true);
+        btn_3C.setEnabled(true);
+        btn_3D.setEnabled(true);
+        btn_3E.setEnabled(true);
 
         int num1 = Integer.parseInt(Pontos.getText());
         int soma = num1 + 10;
@@ -832,9 +847,7 @@ public class TelaJogo extends javax.swing.JFrame {
             // pega a guantidade de pontos que jogador tem 
             TelaJogo ponto = new TelaJogo();
             ponto.setName(Pontos.getText());
-            GameOver frms = new GameOver();
-            frms.ExportarPontos(ponto);
-            frms.setVisible(true);
+            
             dispose();
 
         } else {
@@ -849,6 +862,13 @@ public class TelaJogo extends javax.swing.JFrame {
         btn_3C.setEnabled(false);
         btn_3D.setEnabled(false);
         btn_3E.setEnabled(false);
+        
+        //abilita os campos ára o priximo nivel
+        btn_4A.setEnabled(true);
+        btn_4B.setEnabled(true);
+        btn_4C.setEnabled(true);
+        btn_4D.setEnabled(true);
+        btn_4E.setEnabled(true);
 
         int num1 = Integer.parseInt(Pontos.getText());
         int soma = num1 + 10;
@@ -868,9 +888,7 @@ public class TelaJogo extends javax.swing.JFrame {
             // pega a guantidade de pontos que jogador tem 
             TelaJogo ponto = new TelaJogo();
             ponto.setName(Pontos.getText());
-            GameOver frms = new GameOver();
-            frms.ExportarPontos(ponto);
-            frms.setVisible(true);
+            
             dispose();
 
         } else {
@@ -899,9 +917,7 @@ public class TelaJogo extends javax.swing.JFrame {
             // pega a guantidade de pontos que jogador tem 
             TelaJogo ponto = new TelaJogo();
             ponto.setName(Pontos.getText());
-            GameOver frms = new GameOver();
-            frms.ExportarPontos(ponto);
-            frms.setVisible(true);
+            
             dispose();
 
         } else {
@@ -941,6 +957,7 @@ public class TelaJogo extends javax.swing.JFrame {
     private javax.swing.JButton btn_4D;
     private javax.swing.JButton btn_4E;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
