@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 import javax.swing.JButton;
+import javax.swing.JPanel;
 import javax.swing.Timer;
 import niveis.Nivel;
 
@@ -24,15 +25,16 @@ public class TelaJogo extends javax.swing.JFrame {
      */
     private Timer t;
     private int count = 0;
-    ArrayList<JButton> botaosNivel1 = new Nivel().getBotoes();
-    ArrayList<JButton> botaosNivel2 = new Nivel().getBotoes();
-    ArrayList<JButton> botaosNivel3 = new Nivel().getBotoes();
-    ArrayList<JButton> botaosNivel4 = new Nivel().getBotoes();
+    ArrayList<JPanel> nivel1 = new ArrayList<>();
+    ArrayList<JPanel> nivel2 = new ArrayList<>();
+    ArrayList<JPanel> nivel3 = new ArrayList<>();
+    ArrayList<JPanel> nivel4 = new ArrayList<>();
 
+    private int contadorBmba = 1;
     public TelaJogo() {
         initComponents();
         preencherArryButos();
-        setBotoesEmbaralhados();
+      
 
     }
 
@@ -557,7 +559,7 @@ public class TelaJogo extends javax.swing.JFrame {
     private void btn_1BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_1BActionPerformed
         btn_1B.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Bombinha.png")));
         int num1 = Integer.parseInt(Tentativas.getText());
-        int soma = num1 - 1;
+        int soma = num1 + contadorBmba;
         Tentativas.setText(Integer.toString(soma));
 
         if (Tentativas.getText().equals("0")) {
@@ -577,7 +579,7 @@ public class TelaJogo extends javax.swing.JFrame {
     private void btn_4EActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_4EActionPerformed
         btn_4E.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Bombinha.png")));
         int num1 = Integer.parseInt(Tentativas.getText());
-        int soma = num1 - 1;
+        int soma = num1 + contadorBmba;
         Tentativas.setText(Integer.toString(soma));
 
         if (Tentativas.getText().equals("0")) {
@@ -618,7 +620,7 @@ public class TelaJogo extends javax.swing.JFrame {
     private void btn_1DActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_1DActionPerformed
         btn_1D.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Bombinha.png")));
         int num1 = Integer.parseInt(Tentativas.getText());
-        int soma = num1 - 1;
+        int soma = num1 + contadorBmba;
         Tentativas.setText(Integer.toString(soma));
 
         if (Tentativas.getText().equals("0")) {
@@ -649,7 +651,7 @@ public class TelaJogo extends javax.swing.JFrame {
     private void btn_1AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_1AActionPerformed
         btn_1A.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Bombinha.png")));
         int num1 = Integer.parseInt(Tentativas.getText());
-        int soma = num1 - 1;
+        int soma = num1 + contadorBmba;
         Tentativas.setText(Integer.toString(soma));
 
         if (Tentativas.getText().equals("0")) {
@@ -685,7 +687,7 @@ public class TelaJogo extends javax.swing.JFrame {
     private void btn_4CActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_4CActionPerformed
         btn_4C.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Bombinha.png")));
         int num1 = Integer.parseInt(Tentativas.getText());
-        int soma = num1 - 1;
+        int soma = num1 + contadorBmba;
         Tentativas.setText(Integer.toString(soma));
 
         if (Tentativas.getText().equals("0")) {
@@ -706,7 +708,7 @@ public class TelaJogo extends javax.swing.JFrame {
     private void btn_4BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_4BActionPerformed
         btn_4B.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Bombinha.png")));
         int num1 = Integer.parseInt(Tentativas.getText());
-        int soma = num1 - 1;
+        int soma = num1 + contadorBmba;
         Tentativas.setText(Integer.toString(soma));
 
         if (Tentativas.getText().equals("0")) {
@@ -728,7 +730,7 @@ public class TelaJogo extends javax.swing.JFrame {
         btn_4A.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Bombinha.png")));
 
         int num1 = Integer.parseInt(Tentativas.getText());
-        int soma = num1 - 1;
+        int soma = num1 + contadorBmba;
         Tentativas.setText(Integer.toString(soma));
 
         if (Tentativas.getText().equals("0")) {
@@ -750,7 +752,7 @@ public class TelaJogo extends javax.swing.JFrame {
     private void btn_2AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_2AActionPerformed
         btn_2A.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Bombinha.png")));
         int num1 = Integer.parseInt(Tentativas.getText());
-        int soma = num1 - 1;
+        int soma = num1 + contadorBmba;
         Tentativas.setText(Integer.toString(soma));
 
         if (Tentativas.getText().equals("0")) {
@@ -770,7 +772,7 @@ public class TelaJogo extends javax.swing.JFrame {
     private void btn_2BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_2BActionPerformed
         btn_2B.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Bombinha.png")));
         int num1 = Integer.parseInt(Tentativas.getText());
-        int soma = num1 - 1;
+        int soma = num1 + contadorBmba;
         Tentativas.setText(Integer.toString(soma));
 
         if (Tentativas.getText().equals("0")) {
@@ -790,7 +792,7 @@ public class TelaJogo extends javax.swing.JFrame {
     private void btn_2CActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_2CActionPerformed
         btn_2C.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Bombinha.png")));
         int num1 = Integer.parseInt(Tentativas.getText());
-        int soma = num1 - 1;
+        int soma = num1 + contadorBmba;
         Tentativas.setText(Integer.toString(soma));
 
         if (Tentativas.getText().equals("0")) {
@@ -840,7 +842,7 @@ public class TelaJogo extends javax.swing.JFrame {
     private void btn_3AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_3AActionPerformed
         btn_3A.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Bombinha.png")));
         int num1 = Integer.parseInt(Tentativas.getText());
-        int soma = num1 - 1;
+        int soma = num1 + contadorBmba;
         Tentativas.setText(Integer.toString(soma));
 
         if (Tentativas.getText().equals("0")) {
@@ -881,7 +883,7 @@ public class TelaJogo extends javax.swing.JFrame {
     private void btn_3CActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_3CActionPerformed
         btn_3C.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Bombinha.png")));
         int num1 = Integer.parseInt(Tentativas.getText());
-        int soma = num1 - 1;
+        int soma = num1 + contadorBmba;
         Tentativas.setText(Integer.toString(soma));
 
         if (Tentativas.getText().equals("0")) {
@@ -910,7 +912,7 @@ public class TelaJogo extends javax.swing.JFrame {
     private void btn_3EActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_3EActionPerformed
         btn_3E.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Bombinha.png")));
         int num1 = Integer.parseInt(Tentativas.getText());
-        int soma = num1 - 1;
+        int soma = num1 + contadorBmba;
         Tentativas.setText(Integer.toString(soma));
 
         if (Tentativas.getText().equals("0")) {
@@ -998,53 +1000,47 @@ public class TelaJogo extends javax.swing.JFrame {
 
     private void preencherArryButos() {
 
-        botaosNivel1.addAll(Arrays.asList(btn_1A, btn_1B, btn_1C, btn_1D, btn_1E));
+        nivel1.addAll(Arrays.asList(jPanel1, jPanel2, jPanel3, jPanel4, jPanel24));
+        
+        nivel2.addAll(Arrays.asList(jPanel5, jPanel6, jPanel8, jPanel11, jPanel23));
 
-        botaosNivel2.addAll(Arrays.asList(btn_2A, btn_2B, btn_2C, btn_2D, btn_2E));
+        nivel3.addAll(Arrays.asList(jPanel12, jPanel14, jPanel15, jPanel16, jPanel22));
 
-        botaosNivel3.addAll(Arrays.asList(btn_3A, btn_3B, btn_3C, btn_3D, btn_3E));
-
-        botaosNivel4.addAll(Arrays.asList(btn_4A, btn_4B, btn_4C, btn_4D, btn_4E));
+        nivel4.addAll(Arrays.asList(jPanel17, jPanel18, jPanel19, jPanel20, jPanel21));
+        
+        setBotoesEmbaralhados(nivel1);
+        setBotoesEmbaralhados(nivel2);
+        setBotoesEmbaralhados(nivel3);
+        setBotoesEmbaralhados(nivel4);
 
     }
 
-    private void setBotoesEmbaralhados() {
-        int tam = botaosNivel1.size() -1;
+    private void setBotoesEmbaralhados(ArrayList<JPanel> arrayPanel) {
+        int tam = arrayPanel.size() -1;
         Random rd = new Random();
-        float posX, posY, posZ, posW;
+        int posX, posY, posZ, posW;
         int posAleatoria;
 
-       
-
-        for (int i = 0; i < botaosNivel1.size()-1; i++) {
+        for (int i = 0; i < arrayPanel.size()-1; i++) {
             posAleatoria = rd.nextInt(tam);
-            // pega posisão do primeiro botao
-            posX = botaosNivel1.get(posAleatoria).getAlignmentX();
-            posY = botaosNivel1.get(posAleatoria).getAlignmentY();
+            
+            // pega posisão do aleatoria do botao
+            posX = arrayPanel.get(posAleatoria).getLocation().x;
+            posY = arrayPanel.get(posAleatoria).getLocation().y;
            
             // pega posisão do segundo botao
-            posZ = botaosNivel1.get(i).getAlignmentX();
-            posW = botaosNivel1.get(i).getAlignmentY();
-            
+            posZ = arrayPanel.get(i).getLocation().x;
+            posW = arrayPanel.get(i).getLocation().y;
+
             //Troca posicao do botao primero com o segundo
-            botaosNivel1.get(posAleatoria).setAlignmentX(posZ);
-            botaosNivel1.get(posAleatoria).setAlignmentX(posW);
-            
+            arrayPanel.get(posAleatoria).setLocation(posZ, posW);
+
             //Troca posicao do botao segundo com o primeiro
-             botaosNivel1.get(i).setAlignmentX(posX);
-            botaosNivel1.get(i).setAlignmentX(posY);
+            arrayPanel.get(i).setLocation(posX, posY);
+          
                     
         }
     }
 
-    private void embaralhaBotoes() {
-       int tam = botaosNivel1.size() -1;
-       Random rd = new Random();
-       rd.nextInt(tam);
-       ArrayList<Integer> numeros = new ArrayList<>();
-       for (int i=0; i < tam; i++){        
-           numeros.add(i+1);  
-       }
-
-    }
+   
 }
