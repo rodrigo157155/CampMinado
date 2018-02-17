@@ -6,6 +6,7 @@
 package campominado;
 
 
+import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
@@ -103,8 +104,8 @@ public class TelaJogo extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         Tentativas = new javax.swing.JTextField();
         Pontos = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Campo minado");
@@ -534,15 +535,15 @@ public class TelaJogo extends javax.swing.JFrame {
         getContentPane().add(Pontos);
         Pontos.setBounds(140, 190, 30, 30);
 
+        jButton2.setText("Novo Jogo ");
+        getContentPane().add(jButton2);
+        jButton2.setBounds(540, 470, 90, 23);
+
         jLabel2.setBackground(new java.awt.Color(153, 153, 153));
         jLabel2.setForeground(new java.awt.Color(255, 0, 0));
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/FotoDoFundo.png"))); // NOI18N
         getContentPane().add(jLabel2);
         jLabel2.setBounds(0, 0, 840, 530);
-
-        jButton2.setText("jButton2");
-        getContentPane().add(jButton2);
-        jButton2.setBounds(550, 470, 73, 23);
 
         pack();
         setLocationRelativeTo(null);
