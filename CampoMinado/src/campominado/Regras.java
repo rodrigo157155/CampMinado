@@ -71,7 +71,7 @@ public class Regras extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton3);
-        jButton3.setBounds(300, 490, 180, 39);
+        jButton3.setBounds(300, 490, 180, 9);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(204, 0, 0));

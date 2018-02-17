@@ -46,7 +46,7 @@ public class Menu extends javax.swing.JFrame {
 
         btn_Jogar = new javax.swing.JButton();
         btn_Sair = new javax.swing.JButton();
-        btn_Regras = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -57,7 +57,8 @@ public class Menu extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(null);
 
-        btn_Jogar.setFont(new java.awt.Font("Cooper Black", 1, 18)); // NOI18N
+        btn_Jogar.setFont(new java.awt.Font("Cooper Black", 1, 24)); // NOI18N
+        btn_Jogar.setForeground(new java.awt.Color(0, 204, 0));
         btn_Jogar.setText("New Game");
         btn_Jogar.setBorder(null);
         btn_Jogar.setBorderPainted(false);
@@ -68,29 +69,33 @@ public class Menu extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btn_Jogar);
-        btn_Jogar.setBounds(190, 180, 120, 30);
+        btn_Jogar.setBounds(180, 180, 160, 30);
 
-        btn_Sair.setFont(new java.awt.Font("Cooper Black", 1, 18)); // NOI18N
+        btn_Sair.setFont(new java.awt.Font("Cooper Black", 1, 24)); // NOI18N
+        btn_Sair.setForeground(new java.awt.Color(0, 204, 0));
         btn_Sair.setText("Sair");
         btn_Sair.setContentAreaFilled(false);
+        btn_Sair.setCursor(new java.awt.Cursor(java.awt.Cursor.N_RESIZE_CURSOR));
         btn_Sair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_SairActionPerformed(evt);
             }
         });
         getContentPane().add(btn_Sair);
-        btn_Sair.setBounds(210, 270, 80, 31);
+        btn_Sair.setBounds(210, 270, 90, 37);
 
-        btn_Regras.setFont(new java.awt.Font("Cooper Black", 1, 18)); // NOI18N
-        btn_Regras.setText("Regras ");
-        btn_Regras.setContentAreaFilled(false);
-        btn_Regras.addActionListener(new java.awt.event.ActionListener() {
+        jButton1.setFont(new java.awt.Font("Cooper Black", 1, 24)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 204, 0));
+        jButton1.setText("Regras");
+        jButton1.setBorderPainted(false);
+        jButton1.setContentAreaFilled(false);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_RegrasActionPerformed(evt);
+                jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_Regras);
-        btn_Regras.setBounds(200, 230, 110, 31);
+        getContentPane().add(jButton1);
+        jButton1.setBounds(190, 220, 130, 37);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/FundoInicio.png"))); // NOI18N
         jLabel1.setMaximumSize(new java.awt.Dimension(500, 405));
@@ -117,13 +122,13 @@ public class Menu extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_btn_SairActionPerformed
 
-    private void btn_RegrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_RegrasActionPerformed
-           
-        Regras telaJogo = new Regras();
-        telaJogo.setVisible(true);
-        this.dispose();
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    
+    Regras regra = new Regras();
+    regra.setVisible(true);
+       
         
-    }//GEN-LAST:event_btn_RegrasActionPerformed
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     
     
@@ -166,8 +171,8 @@ public class Menu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_Jogar;
-    private javax.swing.JButton btn_Regras;
     private javax.swing.JButton btn_Sair;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 

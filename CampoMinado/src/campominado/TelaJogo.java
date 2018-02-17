@@ -116,7 +116,7 @@ public class TelaJogo extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(null);
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/m.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/voltar.png"))); // NOI18N
         jButton1.setBorder(null);
         jButton1.setBorderPainted(false);
         jButton1.setContentAreaFilled(false);
@@ -126,7 +126,7 @@ public class TelaJogo extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(650, 460, 150, 40);
+        jButton1.setBounds(630, 460, 170, 40);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/LogoMMM.png"))); // NOI18N
         getContentPane().add(jLabel1);
@@ -535,20 +535,22 @@ public class TelaJogo extends javax.swing.JFrame {
         getContentPane().add(Pontos);
         Pontos.setBounds(140, 190, 30, 30);
 
-        jButton2.setText("Novo Jogo ");
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/nova tentativa.png"))); // NOI18N
+        jButton2.setBorderPainted(false);
+        jButton2.setContentAreaFilled(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(540, 470, 90, 23);
+        jButton2.setBounds(440, 460, 180, 40);
 
         jLabel2.setBackground(new java.awt.Color(153, 153, 153));
         jLabel2.setForeground(new java.awt.Color(255, 0, 0));
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/FotoDoFundo.png"))); // NOI18N
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(10, 0, 840, 530);
+        jLabel2.setBounds(0, 0, 840, 530);
 
         pack();
         setLocationRelativeTo(null);
@@ -569,7 +571,7 @@ public class TelaJogo extends javax.swing.JFrame {
         Tentativas.setText(Integer.toString(soma));
 
         if (Tentativas.getText().equals("0")) {
-            JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba");
+            JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba Tente novamente");
             btn_1A.setEnabled(false);
             btn_1B.setEnabled(false);
             btn_1C.setEnabled(false);
@@ -610,7 +612,7 @@ public class TelaJogo extends javax.swing.JFrame {
         Tentativas.setText(Integer.toString(soma));
 
         if (Tentativas.getText().equals("0")) {
-            JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba");
+            JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba Tente novamente");
             btn_1A.setEnabled(false);
             btn_1B.setEnabled(false);
             btn_1C.setEnabled(false);
@@ -670,7 +672,7 @@ public class TelaJogo extends javax.swing.JFrame {
         Tentativas.setText(Integer.toString(soma));
 
         if (Tentativas.getText().equals("0")) {
-            JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba");
+            JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba Tente novamente");
             btn_1A.setEnabled(false);
             btn_1B.setEnabled(false);
             btn_1C.setEnabled(false);
@@ -722,7 +724,7 @@ public class TelaJogo extends javax.swing.JFrame {
 
         if (Tentativas.getText().equals("0")) {
 
-            JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba");
+            JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba Tente novamente");
             btn_1A.setEnabled(false);
             btn_1B.setEnabled(false);
             btn_1C.setEnabled(false);
@@ -778,7 +780,7 @@ public class TelaJogo extends javax.swing.JFrame {
         Tentativas.setText(Integer.toString(soma));
 
         if (Tentativas.getText().equals("0")) {
-            JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba");
+            JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba Tente novamente");
             btn_1A.setEnabled(false);
             btn_1B.setEnabled(false);
             btn_1C.setEnabled(false);
@@ -819,7 +821,7 @@ public class TelaJogo extends javax.swing.JFrame {
         Tentativas.setText(Integer.toString(soma));
 
         if (Tentativas.getText().equals("0")) {
-            JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba");
+            JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba Tente novamente");
             btn_1A.setEnabled(false);
             btn_1B.setEnabled(false);
             btn_1C.setEnabled(false);
@@ -861,7 +863,7 @@ public class TelaJogo extends javax.swing.JFrame {
         Tentativas.setText(Integer.toString(soma));
 
         if (Tentativas.getText().equals("0")) {
-            JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba");
+            JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba Tente novamente");
             btn_1A.setEnabled(false);
             btn_1B.setEnabled(false);
             btn_1C.setEnabled(false);
@@ -903,7 +905,7 @@ public class TelaJogo extends javax.swing.JFrame {
         Tentativas.setText(Integer.toString(soma));
 
         if (Tentativas.getText().equals("0")) {
-            JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba");
+            JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba Tente novamente");
             btn_1A.setEnabled(false);
             btn_1B.setEnabled(false);
             btn_1C.setEnabled(false);
@@ -943,7 +945,7 @@ public class TelaJogo extends javax.swing.JFrame {
         Tentativas.setText(Integer.toString(soma));
 
         if (Tentativas.getText().equals("0")) {
-            JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba");
+            JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba Tente novamente");
             btn_1A.setEnabled(false);
             btn_1B.setEnabled(false);
             btn_1C.setEnabled(false);
@@ -983,7 +985,7 @@ public class TelaJogo extends javax.swing.JFrame {
         Tentativas.setText(Integer.toString(soma));
 
         if (Tentativas.getText().equals("0")) {
-            JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba");
+            JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba Tente novamente");
             btn_1A.setEnabled(false);
             btn_1B.setEnabled(false);
             btn_1C.setEnabled(false);
@@ -1053,7 +1055,7 @@ public class TelaJogo extends javax.swing.JFrame {
         Tentativas.setText(Integer.toString(soma));
 
         if (Tentativas.getText().equals("0")) {
-            JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba");
+            JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba Tente novamente");
             btn_1A.setEnabled(false);
             btn_1B.setEnabled(false);
             btn_1C.setEnabled(false);
@@ -1114,7 +1116,7 @@ public class TelaJogo extends javax.swing.JFrame {
         Tentativas.setText(Integer.toString(soma));
 
         if (Tentativas.getText().equals("0")) {
-            JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba");
+            JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba Tente novamente");
             btn_1A.setEnabled(false);
             btn_1B.setEnabled(false);
             btn_1C.setEnabled(false);
@@ -1163,7 +1165,7 @@ public class TelaJogo extends javax.swing.JFrame {
         Tentativas.setText(Integer.toString(soma));
 
         if (Tentativas.getText().equals("0")) {
-            JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba");
+            JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba Tente novamente");
             btn_1A.setEnabled(false);
             btn_1B.setEnabled(false);
             btn_1C.setEnabled(false);
