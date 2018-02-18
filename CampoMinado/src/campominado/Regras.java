@@ -62,7 +62,7 @@ public class Regras extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(null);
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/m.png"))); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/voltar.png"))); // NOI18N
         jButton3.setBorderPainted(false);
         jButton3.setContentAreaFilled(false);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -71,7 +71,7 @@ public class Regras extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton3);
-        jButton3.setBounds(300, 490, 180, 9);
+        jButton3.setBounds(300, 490, 180, 20);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(204, 0, 0));
