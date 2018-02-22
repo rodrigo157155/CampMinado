@@ -31,12 +31,44 @@ public class TelaJogo extends javax.swing.JFrame {
     ArrayList<JPanel> nivel3 = new ArrayList<>();
     ArrayList<JPanel> nivel4 = new ArrayList<>();
 
+    ArrayList<JButton> niveBotes01 = new ArrayList<>();
+    ArrayList<JButton> niveBotes02 = new ArrayList<>();
+    ArrayList<JButton> niveBotes03 = new ArrayList<>();
+    ArrayList<JButton> niveBotes04 = new ArrayList<>();
+
     private int contadorBmba = -1;
 
     public TelaJogo() {
         initComponents();
-        preencherArryButos();
+        preencherArryPainel();
+        preencherArryBotoes();
 
+    }
+
+    public void desabilitarBotao() {
+        btn_1A.setEnabled(false);
+        btn_1B.setEnabled(false);
+        btn_1C.setEnabled(false);
+        btn_1D.setEnabled(false);
+        btn_1E.setEnabled(false);
+
+        btn_2A.setEnabled(false);
+        btn_2B.setEnabled(false);
+        btn_2C.setEnabled(false);
+        btn_2D.setEnabled(false);
+        btn_2E.setEnabled(false);
+
+        btn_3A.setEnabled(false);
+        btn_3B.setEnabled(false);
+        btn_3C.setEnabled(false);
+        btn_3D.setEnabled(false);
+        btn_3E.setEnabled(false);
+
+        btn_4A.setEnabled(false);
+        btn_4B.setEnabled(false);
+        btn_4C.setEnabled(false);
+        btn_4D.setEnabled(false);
+        btn_4E.setEnabled(false);
     }
 
     /**
@@ -442,6 +474,7 @@ public class TelaJogo extends javax.swing.JFrame {
         jPanel23.setBounds(660, 260, 90, 80);
 
         jPanel24.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel24.setEnabled(false);
 
         btn_1E.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Minions.png"))); // NOI18N
         btn_1E.setMaximumSize(new java.awt.Dimension(73, 73));
@@ -522,7 +555,7 @@ public class TelaJogo extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Tentativas);
-        Tentativas.setBounds(140, 231, 30, 30);
+        Tentativas.setBounds(140, 231, 40, 30);
 
         Pontos.setEditable(false);
         Pontos.setBackground(new java.awt.Color(204, 204, 204));
@@ -533,7 +566,7 @@ public class TelaJogo extends javax.swing.JFrame {
         Pontos.setBorder(null);
         Pontos.setFocusable(false);
         getContentPane().add(Pontos);
-        Pontos.setBounds(140, 190, 30, 30);
+        Pontos.setBounds(140, 190, 40, 30);
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/nova tentativa.png"))); // NOI18N
         jButton2.setBorderPainted(false);
@@ -572,29 +605,7 @@ public class TelaJogo extends javax.swing.JFrame {
 
         if (Tentativas.getText().equals("0")) {
             JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba Tente novamente");
-            btn_1A.setEnabled(false);
-            btn_1B.setEnabled(false);
-            btn_1C.setEnabled(false);
-            btn_1D.setEnabled(false);
-            btn_1E.setEnabled(false);
-
-            btn_2A.setEnabled(false);
-            btn_2B.setEnabled(false);
-            btn_2C.setEnabled(false);
-            btn_2D.setEnabled(false);
-            btn_2E.setEnabled(false);
-
-            btn_3A.setEnabled(false);
-            btn_3B.setEnabled(false);
-            btn_3C.setEnabled(false);
-            btn_3D.setEnabled(false);
-            btn_3E.setEnabled(false);
-
-            btn_4A.setEnabled(false);
-            btn_4B.setEnabled(false);
-            btn_4C.setEnabled(false);
-            btn_4D.setEnabled(false);
-            btn_4E.setEnabled(false);
+            desabilitarBotao();
 
             // pega a guantidade de pontos que jogador tem 
             TelaJogo ponto = new TelaJogo();
@@ -613,29 +624,7 @@ public class TelaJogo extends javax.swing.JFrame {
 
         if (Tentativas.getText().equals("0")) {
             JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba Tente novamente");
-            btn_1A.setEnabled(false);
-            btn_1B.setEnabled(false);
-            btn_1C.setEnabled(false);
-            btn_1D.setEnabled(false);
-            btn_1E.setEnabled(false);
-
-            btn_2A.setEnabled(false);
-            btn_2B.setEnabled(false);
-            btn_2C.setEnabled(false);
-            btn_2D.setEnabled(false);
-            btn_2E.setEnabled(false);
-
-            btn_3A.setEnabled(false);
-            btn_3B.setEnabled(false);
-            btn_3C.setEnabled(false);
-            btn_3D.setEnabled(false);
-            btn_3E.setEnabled(false);
-
-            btn_4A.setEnabled(false);
-            btn_4B.setEnabled(false);
-            btn_4C.setEnabled(false);
-            btn_4D.setEnabled(false);
-            btn_4E.setEnabled(false);
+            desabilitarBotao();
             // pega a guantidade de pontos que jogador tem 
             TelaJogo ponto = new TelaJogo();
             ponto.setName(Pontos.getText());
@@ -663,6 +652,7 @@ public class TelaJogo extends javax.swing.JFrame {
         int soma = num1 + 10;
         Pontos.setText(Integer.toString(soma));
 
+
     }//GEN-LAST:event_btn_1CActionPerformed
 
     private void btn_1DActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_1DActionPerformed
@@ -673,29 +663,7 @@ public class TelaJogo extends javax.swing.JFrame {
 
         if (Tentativas.getText().equals("0")) {
             JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba Tente novamente");
-            btn_1A.setEnabled(false);
-            btn_1B.setEnabled(false);
-            btn_1C.setEnabled(false);
-            btn_1D.setEnabled(false);
-            btn_1E.setEnabled(false);
-
-            btn_2A.setEnabled(false);
-            btn_2B.setEnabled(false);
-            btn_2C.setEnabled(false);
-            btn_2D.setEnabled(false);
-            btn_2E.setEnabled(false);
-
-            btn_3A.setEnabled(false);
-            btn_3B.setEnabled(false);
-            btn_3C.setEnabled(false);
-            btn_3D.setEnabled(false);
-            btn_3E.setEnabled(false);
-
-            btn_4A.setEnabled(false);
-            btn_4B.setEnabled(false);
-            btn_4C.setEnabled(false);
-            btn_4D.setEnabled(false);
-            btn_4E.setEnabled(false);
+            desabilitarBotao();
             // pega a guantidade de pontos que jogador tem 
             TelaJogo ponto = new TelaJogo();
             ponto.setName(Pontos.getText());
@@ -707,6 +675,10 @@ public class TelaJogo extends javax.swing.JFrame {
 
     private void btn_1EActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_1EActionPerformed
         btn_1E.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Pontinho.png")));
+        desabilitarBotao();
+        for (int i = 0; i < niveBotes02.size(); i++) {
+            niveBotes02.get(i).setEnabled(true);
+        }
 
         int num1 = Integer.parseInt(Tentativas.getText());
         int soma = num1 + 1;
@@ -725,29 +697,7 @@ public class TelaJogo extends javax.swing.JFrame {
         if (Tentativas.getText().equals("0")) {
 
             JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba Tente novamente");
-            btn_1A.setEnabled(false);
-            btn_1B.setEnabled(false);
-            btn_1C.setEnabled(false);
-            btn_1D.setEnabled(false);
-            btn_1E.setEnabled(false);
-
-            btn_2A.setEnabled(false);
-            btn_2B.setEnabled(false);
-            btn_2C.setEnabled(false);
-            btn_2D.setEnabled(false);
-            btn_2E.setEnabled(false);
-
-            btn_3A.setEnabled(false);
-            btn_3B.setEnabled(false);
-            btn_3C.setEnabled(false);
-            btn_3D.setEnabled(false);
-            btn_3E.setEnabled(false);
-
-            btn_4A.setEnabled(false);
-            btn_4B.setEnabled(false);
-            btn_4C.setEnabled(false);
-            btn_4D.setEnabled(false);
-            btn_4E.setEnabled(false);
+            desabilitarBotao();
             // pega a guantidade de pontos que jogador tem 
             TelaJogo ponto = new TelaJogo();
             ponto.setName(Pontos.getText());
@@ -781,29 +731,7 @@ public class TelaJogo extends javax.swing.JFrame {
 
         if (Tentativas.getText().equals("0")) {
             JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba Tente novamente");
-            btn_1A.setEnabled(false);
-            btn_1B.setEnabled(false);
-            btn_1C.setEnabled(false);
-            btn_1D.setEnabled(false);
-            btn_1E.setEnabled(false);
-
-            btn_2A.setEnabled(false);
-            btn_2B.setEnabled(false);
-            btn_2C.setEnabled(false);
-            btn_2D.setEnabled(false);
-            btn_2E.setEnabled(false);
-
-            btn_3A.setEnabled(false);
-            btn_3B.setEnabled(false);
-            btn_3C.setEnabled(false);
-            btn_3D.setEnabled(false);
-            btn_3E.setEnabled(false);
-
-            btn_4A.setEnabled(false);
-            btn_4B.setEnabled(false);
-            btn_4C.setEnabled(false);
-            btn_4D.setEnabled(false);
-            btn_4E.setEnabled(false);
+            desabilitarBotao();
             // pega a guantidade de pontos que jogador tem 
             TelaJogo ponto = new TelaJogo();
             ponto.setName(Pontos.getText());
@@ -822,29 +750,7 @@ public class TelaJogo extends javax.swing.JFrame {
 
         if (Tentativas.getText().equals("0")) {
             JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba Tente novamente");
-            btn_1A.setEnabled(false);
-            btn_1B.setEnabled(false);
-            btn_1C.setEnabled(false);
-            btn_1D.setEnabled(false);
-            btn_1E.setEnabled(false);
-
-            btn_2A.setEnabled(false);
-            btn_2B.setEnabled(false);
-            btn_2C.setEnabled(false);
-            btn_2D.setEnabled(false);
-            btn_2E.setEnabled(false);
-
-            btn_3A.setEnabled(false);
-            btn_3B.setEnabled(false);
-            btn_3C.setEnabled(false);
-            btn_3D.setEnabled(false);
-            btn_3E.setEnabled(false);
-
-            btn_4A.setEnabled(false);
-            btn_4B.setEnabled(false);
-            btn_4C.setEnabled(false);
-            btn_4D.setEnabled(false);
-            btn_4E.setEnabled(false);
+            desabilitarBotao();
             // pega a guantidade de pontos que jogador tem 
             TelaJogo ponto = new TelaJogo();
             ponto.setName(Pontos.getText());
@@ -864,29 +770,7 @@ public class TelaJogo extends javax.swing.JFrame {
 
         if (Tentativas.getText().equals("0")) {
             JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba Tente novamente");
-            btn_1A.setEnabled(false);
-            btn_1B.setEnabled(false);
-            btn_1C.setEnabled(false);
-            btn_1D.setEnabled(false);
-            btn_1E.setEnabled(false);
-
-            btn_2A.setEnabled(false);
-            btn_2B.setEnabled(false);
-            btn_2C.setEnabled(false);
-            btn_2D.setEnabled(false);
-            btn_2E.setEnabled(false);
-
-            btn_3A.setEnabled(false);
-            btn_3B.setEnabled(false);
-            btn_3C.setEnabled(false);
-            btn_3D.setEnabled(false);
-            btn_3E.setEnabled(false);
-
-            btn_4A.setEnabled(false);
-            btn_4B.setEnabled(false);
-            btn_4C.setEnabled(false);
-            btn_4D.setEnabled(false);
-            btn_4E.setEnabled(false);
+            desabilitarBotao();
             // pega a guantidade de pontos que jogador tem 
             TelaJogo ponto = new TelaJogo();
             ponto.setName(Pontos.getText());
@@ -906,29 +790,7 @@ public class TelaJogo extends javax.swing.JFrame {
 
         if (Tentativas.getText().equals("0")) {
             JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba Tente novamente");
-            btn_1A.setEnabled(false);
-            btn_1B.setEnabled(false);
-            btn_1C.setEnabled(false);
-            btn_1D.setEnabled(false);
-            btn_1E.setEnabled(false);
-
-            btn_2A.setEnabled(false);
-            btn_2B.setEnabled(false);
-            btn_2C.setEnabled(false);
-            btn_2D.setEnabled(false);
-            btn_2E.setEnabled(false);
-
-            btn_3A.setEnabled(false);
-            btn_3B.setEnabled(false);
-            btn_3C.setEnabled(false);
-            btn_3D.setEnabled(false);
-            btn_3E.setEnabled(false);
-
-            btn_4A.setEnabled(false);
-            btn_4B.setEnabled(false);
-            btn_4C.setEnabled(false);
-            btn_4D.setEnabled(false);
-            btn_4E.setEnabled(false);
+            desabilitarBotao();
             // pega a guantidade de pontos que jogador tem 
             TelaJogo ponto = new TelaJogo();
             ponto.setName(Pontos.getText());
@@ -946,29 +808,7 @@ public class TelaJogo extends javax.swing.JFrame {
 
         if (Tentativas.getText().equals("0")) {
             JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba Tente novamente");
-            btn_1A.setEnabled(false);
-            btn_1B.setEnabled(false);
-            btn_1C.setEnabled(false);
-            btn_1D.setEnabled(false);
-            btn_1E.setEnabled(false);
-
-            btn_2A.setEnabled(false);
-            btn_2B.setEnabled(false);
-            btn_2C.setEnabled(false);
-            btn_2D.setEnabled(false);
-            btn_2E.setEnabled(false);
-
-            btn_3A.setEnabled(false);
-            btn_3B.setEnabled(false);
-            btn_3C.setEnabled(false);
-            btn_3D.setEnabled(false);
-            btn_3E.setEnabled(false);
-
-            btn_4A.setEnabled(false);
-            btn_4B.setEnabled(false);
-            btn_4C.setEnabled(false);
-            btn_4D.setEnabled(false);
-            btn_4E.setEnabled(false);
+            desabilitarBotao();
             // pega a guantidade de pontos que jogador tem 
             TelaJogo ponto = new TelaJogo();
             ponto.setName(Pontos.getText());
@@ -986,29 +826,7 @@ public class TelaJogo extends javax.swing.JFrame {
 
         if (Tentativas.getText().equals("0")) {
             JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba Tente novamente");
-            btn_1A.setEnabled(false);
-            btn_1B.setEnabled(false);
-            btn_1C.setEnabled(false);
-            btn_1D.setEnabled(false);
-            btn_1E.setEnabled(false);
-
-            btn_2A.setEnabled(false);
-            btn_2B.setEnabled(false);
-            btn_2C.setEnabled(false);
-            btn_2D.setEnabled(false);
-            btn_2E.setEnabled(false);
-
-            btn_3A.setEnabled(false);
-            btn_3B.setEnabled(false);
-            btn_3C.setEnabled(false);
-            btn_3D.setEnabled(false);
-            btn_3E.setEnabled(false);
-
-            btn_4A.setEnabled(false);
-            btn_4B.setEnabled(false);
-            btn_4C.setEnabled(false);
-            btn_4D.setEnabled(false);
-            btn_4E.setEnabled(false);
+            desabilitarBotao();
             // pega a guantidade de pontos que jogador tem 
             TelaJogo ponto = new TelaJogo();
             ponto.setName(Pontos.getText());
@@ -1040,6 +858,10 @@ public class TelaJogo extends javax.swing.JFrame {
 
     private void btn_2DActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_2DActionPerformed
         btn_2D.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Pontinho.png")));
+        desabilitarBotao();
+        for (int i = 0; i < niveBotes03.size(); i++) {
+            niveBotes03.get(i).setEnabled(true);
+        }
 
         int num1 = Integer.parseInt(Tentativas.getText());
         int soma = num1 + 1;
@@ -1056,29 +878,7 @@ public class TelaJogo extends javax.swing.JFrame {
 
         if (Tentativas.getText().equals("0")) {
             JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba Tente novamente");
-            btn_1A.setEnabled(false);
-            btn_1B.setEnabled(false);
-            btn_1C.setEnabled(false);
-            btn_1D.setEnabled(false);
-            btn_1E.setEnabled(false);
-
-            btn_2A.setEnabled(false);
-            btn_2B.setEnabled(false);
-            btn_2C.setEnabled(false);
-            btn_2D.setEnabled(false);
-            btn_2E.setEnabled(false);
-
-            btn_3A.setEnabled(false);
-            btn_3B.setEnabled(false);
-            btn_3C.setEnabled(false);
-            btn_3D.setEnabled(false);
-            btn_3E.setEnabled(false);
-
-            btn_4A.setEnabled(false);
-            btn_4B.setEnabled(false);
-            btn_4C.setEnabled(false);
-            btn_4D.setEnabled(false);
-            btn_4E.setEnabled(false);
+            desabilitarBotao();
             // pega a guantidade de pontos que jogador tem 
             TelaJogo ponto = new TelaJogo();
             ponto.setName(Pontos.getText());
@@ -1117,29 +917,7 @@ public class TelaJogo extends javax.swing.JFrame {
 
         if (Tentativas.getText().equals("0")) {
             JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba Tente novamente");
-            btn_1A.setEnabled(false);
-            btn_1B.setEnabled(false);
-            btn_1C.setEnabled(false);
-            btn_1D.setEnabled(false);
-            btn_1E.setEnabled(false);
-
-            btn_2A.setEnabled(false);
-            btn_2B.setEnabled(false);
-            btn_2C.setEnabled(false);
-            btn_2D.setEnabled(false);
-            btn_2E.setEnabled(false);
-
-            btn_3A.setEnabled(false);
-            btn_3B.setEnabled(false);
-            btn_3C.setEnabled(false);
-            btn_3D.setEnabled(false);
-            btn_3E.setEnabled(false);
-
-            btn_4A.setEnabled(false);
-            btn_4B.setEnabled(false);
-            btn_4C.setEnabled(false);
-            btn_4D.setEnabled(false);
-            btn_4E.setEnabled(false);
+            desabilitarBotao();
             // pega a guantidade de pontos que jogador tem 
             TelaJogo ponto = new TelaJogo();
             ponto.setName(Pontos.getText());
@@ -1151,7 +929,11 @@ public class TelaJogo extends javax.swing.JFrame {
 
     private void btn_3DActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_3DActionPerformed
         btn_3D.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Pontinho.png")));
-//nfbhdsbsdfh
+        desabilitarBotao();
+        for (int i = 0; i < niveBotes04.size(); i++) {
+            niveBotes04.get(i).setEnabled(true);
+        }
+
         int num1 = Integer.parseInt(Tentativas.getText());
         int soma = num1 + 1;
         Tentativas.setText(Integer.toString(soma));
@@ -1166,29 +948,7 @@ public class TelaJogo extends javax.swing.JFrame {
 
         if (Tentativas.getText().equals("0")) {
             JOptionPane.showMessageDialog(null, "GameOver Voce Encontrou uma Bomba Tente novamente");
-            btn_1A.setEnabled(false);
-            btn_1B.setEnabled(false);
-            btn_1C.setEnabled(false);
-            btn_1D.setEnabled(false);
-            btn_1E.setEnabled(false);
-
-            btn_2A.setEnabled(false);
-            btn_2B.setEnabled(false);
-            btn_2C.setEnabled(false);
-            btn_2D.setEnabled(false);
-            btn_2E.setEnabled(false);
-
-            btn_3A.setEnabled(false);
-            btn_3B.setEnabled(false);
-            btn_3C.setEnabled(false);
-            btn_3D.setEnabled(false);
-            btn_3E.setEnabled(false);
-
-            btn_4A.setEnabled(false);
-            btn_4B.setEnabled(false);
-            btn_4C.setEnabled(false);
-            btn_4D.setEnabled(false);
-            btn_4E.setEnabled(false);
+            desabilitarBotao();
             // pega a guantidade de pontos que jogador tem 
             TelaJogo ponto = new TelaJogo();
             ponto.setName(Pontos.getText());
@@ -1273,7 +1033,7 @@ public class TelaJogo extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel8;
     // End of variables declaration//GEN-END:variables
 
-    private void preencherArryButos() {
+    private void preencherArryPainel() {
 
         nivel1.addAll(Arrays.asList(jPanel1, jPanel2, jPanel3, jPanel4, jPanel24));
 
@@ -1290,13 +1050,22 @@ public class TelaJogo extends javax.swing.JFrame {
 
     }
 
+    private void preencherArryBotoes() {
+
+        niveBotes01.addAll(Arrays.asList(btn_1A, btn_1B, btn_1C, btn_1D, btn_1E));
+        niveBotes02.addAll(Arrays.asList(btn_2A, btn_2B, btn_2C, btn_2D, btn_2E));
+        niveBotes03.addAll(Arrays.asList(btn_3A, btn_3B, btn_3C, btn_3D, btn_3E));
+        niveBotes04.addAll(Arrays.asList(btn_4A, btn_4B, btn_4C, btn_4D, btn_4E));
+
+    }
+
     private void setBotoesEmbaralhados(ArrayList<JPanel> arrayPanel) {
         int tam = arrayPanel.size() - 1;
         Random rd = new Random();
         int posX, posY, posZ, posW;
         int posAleatoria;
 
-        for (int i = 0; i < arrayPanel.size() - 1; i++) {
+        for (int i = 0; i < arrayPanel.size(); i++) {
             posAleatoria = rd.nextInt(tam);
 
             // pega posisão do aleatoria do botao
