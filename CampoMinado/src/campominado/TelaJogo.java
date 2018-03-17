@@ -637,10 +637,7 @@ public class TelaJogo extends javax.swing.JFrame {
 
     private void btn_1CActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_1CActionPerformed
         btn_1C.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Setinha.png")));
-        btn_1A.setEnabled(false);
-        btn_1B.setEnabled(false);
-        btn_1D.setEnabled(false);
-        btn_1E.setEnabled(false);
+        desabilitarBotao();
 
         btn_2A.setEnabled(true);
         btn_2B.setEnabled(true);
@@ -651,6 +648,7 @@ public class TelaJogo extends javax.swing.JFrame {
         int num1 = Integer.parseInt(Pontos.getText());
         int soma = num1 + 10;
         Pontos.setText(Integer.toString(soma));
+        btn_1C.setEnabled(false);
 
 
     }//GEN-LAST:event_btn_1CActionPerformed
@@ -720,7 +718,8 @@ public class TelaJogo extends javax.swing.JFrame {
         Ganhou frm = new Ganhou();
         frm.ExportarPontos(pontos);
         frm.setVisible(true);
-        this.dispose();
+        desabilitarBotao();
+        btn_4D.setEnabled(false);
     }//GEN-LAST:event_btn_4DActionPerformed
 
     private void btn_4CActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_4CActionPerformed
@@ -839,10 +838,7 @@ public class TelaJogo extends javax.swing.JFrame {
 
     private void btn_2EActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_2EActionPerformed
         btn_2E.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Setinha.png")));
-        btn_2A.setEnabled(false);
-        btn_2B.setEnabled(false);
-        btn_2C.setEnabled(false);
-        btn_2D.setEnabled(false);
+        desabilitarBotao();
 
         //abilita os campos ára o priximo nivel
         btn_3A.setEnabled(true);
@@ -891,10 +887,7 @@ public class TelaJogo extends javax.swing.JFrame {
 
     private void btn_3BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_3BActionPerformed
         btn_3B.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Setinha.png")));
-        btn_3A.setEnabled(false);
-        btn_3C.setEnabled(false);
-        btn_3D.setEnabled(false);
-        btn_3E.setEnabled(false);
+        desabilitarBotao();
 
         //abilita os campos ára o priximo nivel
         btn_4A.setEnabled(true);
